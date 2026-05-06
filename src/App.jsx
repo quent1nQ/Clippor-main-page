@@ -87,7 +87,16 @@ function HomePage() {
 }
 
 function PrivacyPage() {
-  return <main className="privacy-page" dangerouslySetInnerHTML={{ __html: privacyHtml }} />;
+  return (
+    <main className="privacy-page">
+      <div className="privacy-top">
+        <a className="back-link" href={homeUrl}>
+          ← 返回首页
+        </a>
+      </div>
+      <div dangerouslySetInnerHTML={{ __html: privacyHtml }} />
+    </main>
+  );
 }
 
 export default function App() {
