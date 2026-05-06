@@ -3,7 +3,7 @@ import heroUrl from '../assets/images/macbook-hero.png';
 import { privacyHtml } from './privacyContent.js';
 import './styles.css';
 
-const APP_STORE_URL = 'https://apps.apple.com/us/search?term=Clippor&platform=mac';
+const APP_STORE_URL = 'https://apps.apple.com/app/id6762117514';
 const baseUrl = import.meta.env.BASE_URL;
 const privacyUrl = `${baseUrl}privacy.html`;
 const homeUrl = baseUrl;
