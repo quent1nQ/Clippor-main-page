@@ -178,12 +178,36 @@ img {
   color: rgba(17, 19, 33, 0.54);
 }
 
-h1 {
+.hero-title {
+  display: grid;
+  justify-items: center;
+  gap: 0.06em;
   margin: 0;
-  font-size: clamp(3.3rem, 9vw, 6.7rem);
-  line-height: 0.94;
-  letter-spacing: -0.06em;
-  font-weight: 800;
+  font-family: Inter, "SF Pro Display", "PingFang SC", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  font-size: clamp(3.45rem, 8.4vw, 6.45rem);
+  line-height: 0.98;
+  letter-spacing: -0.047em;
+  font-weight: 780;
+  text-wrap: balance;
+  font-feature-settings:
+    "kern" 1,
+    "ss01" 1;
+}
+
+.hero-title span {
+  display: block;
+}
+
+.hero-title span:first-child {
+  letter-spacing: -0.04em;
+}
+
+.hero-title span:last-child {
+  color: rgba(17, 19, 33, 0.82);
+  font-size: 0.82em;
+  font-weight: 720;
+  letter-spacing: -0.035em;
 }
 
 .hero-copy {
@@ -464,10 +488,15 @@ h1 {
     letter-spacing: 0.14em;
   }
 
-  h1 {
-    font-size: clamp(3rem, 17vw, 4.6rem);
-    line-height: 0.92;
-    letter-spacing: -0.065em;
+  .hero-title {
+    gap: 0.08em;
+    font-size: clamp(2.72rem, 13.5vw, 4.15rem);
+    line-height: 1;
+    letter-spacing: -0.048em;
+  }
+
+  .hero-title span:last-child {
+    font-size: 0.78em;
   }
 
   .hero-copy {
@@ -576,8 +605,9 @@ h1 {
     padding-inline: 12px;
   }
 
-  h1 {
-    font-size: clamp(2.7rem, 16vw, 3.6rem);
+  .hero-title {
+    font-size: clamp(2.48rem, 13vw, 3.35rem);
+    letter-spacing: -0.045em;
   }
 
   .topbar-nav a {

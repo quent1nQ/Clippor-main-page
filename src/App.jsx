@@ -30,9 +30,9 @@ function HomePage() {
 
       <main className="hero">
         <p className="eyebrow">为安静、专注的工作流而设计</p>
-        <h1>
-          An ECO Way to<br />
-          Copy and Paste
+        <h1 className="hero-title" aria-label="An ECO Way to Copy and Paste">
+          <span>An ECO Way</span>
+          <span>to Copy &amp; Paste</span>
         </h1>
         <p className="hero-copy">
           一种更克制、更优雅的 Mac 剪贴板方式，让复制过的内容始终清晰可见、随时可找、触手可及。
